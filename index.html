@@ -8,6 +8,7 @@
         $("#forecast").on("click", function(){
           $.ajax({
             url : "list.json",
+            type : "Get",
             dataType : "json",
             success : onSuccess
           });
