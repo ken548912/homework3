@@ -10,10 +10,14 @@
             url : "https://ken548912.github.io/homework3/list.json",
             type : "GET",
             dataType : "jsonp",
-            success : onSuccess
+            success : onSuccess,
+            error:onError
           });
         });
       });
+      function onError(data){
+        alert('錯誤');
+      }
       function onSuccess(data){
         $("#tt").empty();
         //建立第一列的內容並加到表格
